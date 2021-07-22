@@ -19,3 +19,13 @@ Icons			: WhiteSur-Dark [GTK2/3]
 Font			: Product Sans Regular
 Icon font		: Feather
 ```
+
+## Iceberg
+
+```
+WM Theme		: Dracula-withoutBorder
+Theme			: Dracula [GTK2/3]
+Icons			: WhiteSur-Dark [GTK2/3]
+Font			: Product Sans Regular
+Icon font		: Feather
+```
