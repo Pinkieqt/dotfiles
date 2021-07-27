@@ -1,0 +1,5 @@
+/* Text Font */
+
+* {
+    font:				 	"Product Sans Regular 10";
+}

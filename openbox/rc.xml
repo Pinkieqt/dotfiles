@@ -18,9 +18,10 @@
     <monitor>Mouse</monitor>
     <primaryMonitor>Mouse</primaryMonitor>
   </placement>
+  
   <theme>
-    <name>Dracula-withoutBorder</name>
-    <titleLayout>LIMC</titleLayout>
+    <name>Numix-Clone</name>
+    <titleLayout>IMC</titleLayout>
     <keepBorder>no</keepBorder>
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
@@ -67,8 +68,6 @@
       <name>1</name>
       <name>2</name>
       <name>3</name>
-      <name>4</name>
-      <name>5</name>
     </names>
     <popupTime>0</popupTime>
   </desktops>
@@ -82,10 +81,10 @@
     </popupFixedPosition>
   </resize>
   <margins>
-    <top>0</top>
-    <bottom>15</bottom>
-    <left>15</left>
-    <right>15</right>
+    <top>40</top>
+    <bottom>10</bottom>
+    <left>10</left>
+    <right>10</right>
   </margins>
   <dock>
     <position>Bottom</position>
@@ -118,16 +117,8 @@
         <to>3</to>
       </action>
     </keybind>
-    <keybind key="W-4">
-      <action name="GoToDesktop">
-        <to>4</to>
-      </action>
-    </keybind>
-    <keybind key="W-5">
-      <action name="GoToDesktop">
-        <to>5</to>
-      </action>
-    </keybind>
+    
+    
     <!-- Move application to specific desktop -->
     <keybind key="S-W-1">
       <action name="SendToDesktop">
@@ -144,22 +135,13 @@
         <desktop>3</desktop>
       </action>
     </keybind>
-    <keybind key="S-W-4">
-      <action name="SendToDesktop">
-        <desktop>4</desktop>
-      </action>
-    </keybind>
-    <keybind key="S-W-5">
-      <action name="SendToDesktop">
-        <desktop>5</desktop>
-      </action>
-    </keybind>
+    
+    
     <!-- Switch b/w Applications -->
     <keybind key="A-Tab">
       <action name="NextWindow">
         <allDesktops>no</allDesktops>
         <raise>yes</raise>
-        <!-- Hide black border around windows -->
         <bar>no</bar>
         <finalactions>
           <action name="Focus"/>
@@ -170,7 +152,6 @@
     <keybind key="W-Tab">
       <action name="NextWindow">
         <allDesktops>yes</allDesktops>
-        <!-- Hide black border around windows -->
         <bar>no</bar>
         <finalactions>
           <action name="focus"/>
@@ -178,6 +159,8 @@
         </finalactions>
       </action>
     </keybind>
+    
+    
     <!-- Window Tiling: Snap feature -->
     <keybind key="W-Left">
       <action name="UnmaximizeFull"/>
@@ -202,16 +185,20 @@
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
         <width>60%</width>
-        <height>80%</height>
+        <height>70%</height>
       </action>
       <action name="MoveToCenter"/>
     </keybind>
+    
+    
     <!-- Top right-->
     <keybind key="W-k">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
         <x>-5</x>
         <y>5</y>
+        <height>49%</height>
+        <width>49%</width>
       </action>
     </keybind>
     <!-- Top left-->
@@ -220,6 +207,8 @@
       <action name="MoveResizeTo">
         <x>5</x>
         <y>5</y>
+        <height>49%</height>
+        <width>49%</width>
       </action>
     </keybind>
     <!-- Bottom left-->
@@ -228,6 +217,8 @@
       <action name="MoveResizeTo">
         <x>5</x>
         <y>-5</y>
+        <height>49%</height>
+        <width>49%</width>
       </action>
     </keybind>
     <!-- Bottom right-->
@@ -236,8 +227,12 @@
       <action name="MoveResizeTo">
         <x>-5</x>
         <y>-5</y>
+        <height>49%</height>
+        <width>49%</width>
       </action>
     </keybind>
+    
+    
     <!-- MY CODING TILE MANAGER -->
     <keybind key="W-1">
       <action name="Unmaximize"/>
@@ -266,7 +261,46 @@
         <width>32%</width>
       </action>
     </keybind>
-    <!-- MY CODING TILE MANAGER -->
+    
+	<!-- 2x2 GRID -->
+    <keybind key="W-7">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>19%</x>
+        <y>15%</y>
+        <height>30%</height>
+        <width>20%</width>
+      </action>
+    </keybind>
+    <keybind key="W-8">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>41%</x>
+        <y>15%</y>
+        <height>30%</height>
+        <width>40%</width>
+      </action>
+    </keybind>
+    <keybind key="W-9">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>19%</x>
+        <y>48%</y>
+        <height>30%</height>
+        <width>40%</width>
+      </action>
+    </keybind>
+    <keybind key="W-0">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>61%</x>
+        <y>48%</y>
+        <height>30%</height>
+        <width>20%</width>
+      </action>
+    </keybind>
+    
+    
     <!-- Move -->
     <keybind key="W-A-Up">
       <action name="MoveRelative">
@@ -292,6 +326,8 @@
         <y>0</y>
       </action>
     </keybind>
+    
+    
     <!-- Resize -->
     <keybind key="C-A-Right">
       <action name="ResizeRelative">
@@ -313,6 +349,8 @@
         <bottom>-20</bottom>
       </action>
     </keybind>
+    
+    
     <!-- Send Application to next/prev desktop -->
     <keybind key="W-S-Left">
       <action name="SendToDesktopLeft"/>
@@ -320,6 +358,8 @@
     <keybind key="W-S-Right">
       <action name="SendToDesktopRight"/>
     </keybind>
+    
+    
     <!-- Media Controls-->
     <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
@@ -367,6 +407,8 @@
         <command>backlight-down</command>
       </action>
     </keybind>
+    
+    
     <!-- Screenshot Keys -->
     <keybind key="Print">
       <action name="Execute">
@@ -378,15 +420,12 @@
         <command>flameshot full</command>
       </action>
     </keybind>
-    <keybind key="C-Print">
-      <action name="Execute">
-        <command>scrot -u -b 'Screenshot_%Y-%m-%d-%I-%M-%S_$wx$h.png' -e 'mv $f $$(xdg-user-dir PICTURES) ; viewnior $$(xdg-user-dir PICTURES)/$f'</command>
-      </action>
-    </keybind>
+    
+    
     <!-- Launch Applications -->
     <keybind key="W-e">
       <action name="Execute">
-        <command>thunar</command>
+        <command>nautilus</command>
       </action>
     </keybind>
     <keybind key="W-f">
@@ -405,68 +444,66 @@
       </action>
     </keybind>
     <keybind key="W-w">
-      <action name="Execute">
-        <command>google-chrome-stable</command>
-      </action>
+      <action name="Iconify"/>
     </keybind>
-    <keybind key="W-n">
+    <!-- <keybind key="W-n">
       <action name="Execute">
         <command>networkmanager_dmenu</command>
       </action>
-    </keybind>
+    </keybind> -->
     <keybind key="A-F1">
       <action name="Execute">
         <command>~/.config/rofi/bin/launcher</command>
       </action>
     </keybind>
-    <keybind key="W-m">
+    <!-- <keybind key="W-m">
       <action name="Execute">
         <command>~/.config/rofi/bin/mpd</command>
       </action>
-    </keybind>
+    </keybind> -->
     <keybind key="W-x">
       <action name="Execute">
         <command>~/.config/rofi/bin/powermenu</command>
       </action>
     </keybind>
-    <keybind key="W-s">
+    <!-- <keybind key="W-s">
       <action name="Execute">
         <command>~/.config/rofi/bin/screenshot</command>
       </action>
-    </keybind>
-    <keybind key="W-i">
+    </keybind> -->
+    <!-- <keybind key="W-i">
       <action name="Execute">
         <command>~/.config/rofi/bin/network</command>
-      </action>
-    </keybind>
+      </action>xv
+    </keybind> -->
     <keybind key="W-p">
       <action name="Execute">
-        <command>color_picker</command>
+        <command>colorpicker --short --one-shot | xsel -b</command>
       </action>
     </keybind>
-    <keybind key="W-v">
+    <!-- <keybind key="W-v">
       <action name="Execute">
         <command>tasks</command>
       </action>
-    </keybind>
-    <keybind key="C-A-t">
+    </keybind> -->
+    <!-- <keybind key="C-A-t">
       <action name="Execute">
         <command>xfce4-terminal</command>
       </action>
-    </keybind>
-    <keybind key="C-A-v">
+    </keybind> -->
+    <!-- <keybind key="C-A-v">
       <action name="Execute">
         <command>alacritty -e vim</command>
       </action>
-    </keybind>
-    <keybind key="C-A-r">
+    </keybind> -->
+    <!-- <keybind key="C-A-r">
       <action name="Execute">
         <command>alacritty -e ranger</command>
       </action>
-    </keybind>
+    </keybind> -->
     <keybind key="C-A-h">
       <action name="Execute">
-        <command>alacritty -e htop</command>
+        <command>alacritty -e gotop</command>
       </action>
     </keybind>
     <keybind key="C-A-l">
@@ -474,8 +511,10 @@
         <command>betterlockscreen --lock</command>
       </action>
     </keybind>
+
+
     <!-- Openbox -->
-    <keybind key="C-S-Escape">
+    <!-- <keybind key="C-S-Escape">
       <action name="Exit"/>
     </keybind>
     <keybind key="C-S-BackSpace">
@@ -488,7 +527,7 @@
       <action name="Execute">
         <command>xkill</command>
       </action>
-    </keybind>
+    </keybind> -->
     <keybind key="W-c">
       <action name="Close"/>
     </keybind>
@@ -499,7 +538,7 @@
       <action name="Close"/>
     </keybind>
     <keybind key="A-F5">
-      <action name="Iconify"/>
+      <action name="Reconfigure"/>
     </keybind>
     <keybind key="A-F6">
       <action name="ToggleMaximize"/>
@@ -510,6 +549,8 @@
     <keybind key="W-d">
       <action name="ToggleShowDesktop"/>
     </keybind>
+
+
     <!-- Activate Move/Resize -->
     <keybind key="A-r">
       <action name="Resize"/>
@@ -517,24 +558,26 @@
     <keybind key="A-m">
       <action name="Move"/>
     </keybind>
-    <!-- Launch Openbox Menu -->
+    <!-- Launch Openbox Menu root-menu -->
     <keybind key="W-space">
-      <action name="ShowMenu">
-        <menu>root-menu</menu>
+      <action name="Execute">
+        <command>alacritty -e ranger</command>
       </action>
     </keybind>
-    <keybind key="C-A-space">
+    <!-- <keybind key="C-A-space">
       <action name="ShowMenu">
         <menu>app-menu</menu>
       </action>
-    </keybind>
+    </keybind> -->
     <keybind key="A-space">
       <action name="ShowMenu">
         <menu>client-menu</menu>
       </action>
     </keybind>
+
+
     <!-- Windows Tiling -->
-    <keybind key="W-KP_1">
+    <!-- <keybind key="W-KP_1">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
         <x>0</x>
@@ -608,9 +651,12 @@
         <width>50%</width>
         <height>50%</height>
       </action>
-    </keybind>
-  </keyboard>
+    </keybind>-->
+  </keyboard> 
   <!-- Ended Keyboard Shortcuts -->
+
+
+
   <mouse>
     <dragThreshold>4</dragThreshold>
     <doubleClickTime>400</doubleClickTime>
@@ -633,6 +679,10 @@
         <action name="Resize"/>
       </mousebind>
     </context>
+
+
+
+
     <context name="Titlebar">
       <mousebind action="Press" button="A-Left">
         <action name="Focus"/>
@@ -693,6 +743,9 @@
         </action>
       </mousebind>
     </context>
+
+
+
     <context name="Titlebar Top Right Bottom Left TLCorner TRCorner BRCorner BLCorner">
       <mousebind action="Press" button="Left">
         <action name="Focus"/>
@@ -862,6 +915,8 @@
       </mousebind>
     </context>
   </mouse>
+
+
   <menu>
     <file>menu.xml</file>
     <hideDelay>400</hideDelay>
@@ -871,10 +926,13 @@
     <applicationIcons>no</applicationIcons>
     <manageDesktops>yes</manageDesktops>
   </menu>
+
+
   <applications>
-    <application class="firefox">
+    <application class="*">
       <decor>no</decor>
     </application>
+
     <application name="oblogout">
       <position force="no">
         <monitor>1</monitor>
@@ -890,34 +948,7 @@
         <width>50%</width>
       </size>
     </application>
-    <application title="About : Aditya Shakya">
-      <decor>no</decor>
-      <position force="yes">
-        <x>center</x>
-        <y>center</y>
-      </position>
-    </application>
-    <application title="file:///usr/share/adi1090x/index.html">
-      <decor>no</decor>
-      <position force="yes">
-        <x>center</x>
-        <y>center</y>
-      </position>
-    </application>
-    <application title="Getting Started">
-      <decor>yes</decor>
-      <position force="yes">
-        <x>center</x>
-        <y>center</y>
-      </position>
-    </application>
-    <application title="file:///usr/share/get_started/index.html">
-      <decor>yes</decor>
-      <position force="yes">
-        <x>center</x>
-        <y>center</y>
-      </position>
-    </application>
+    
     <application title="MPlayer">
       <decor>no</decor>
     </application>
@@ -927,16 +958,17 @@
         <y>center</y>
       </position>
     </application>
+
+
+    
     <!--	<application class="*">
 	  <focus>yes</focus>
 	</application> -->
     <!--
-
   # this is an example with comments through out. use these to make your
   # own rules, but without the comments of course.
   # you may use one or more of the name/class/role/title/type rules to specify
   # windows to match
-
   <application name="the window's _OB_APP_NAME property (see obxprop)"
               class="the window's _OB_APP_CLASS property (see obxprop)"
           groupname="the window's _OB_APP_GROUP_NAME property (see obxprop)"
@@ -947,27 +979,19 @@
                       (if unspecified, then it is 'dialog' for child windows)">
   # you may set only one of name/class/role/title/type, or you may use more
   # than one together to restrict your matches.
-
   # the name, class, role, and title use simple wildcard matching such as those
   # used by a shell. you can use * to match any characters and ? to match
   # any single character.
-
   # the type is one of: normal, dialog, splash, utility, menu, toolbar, dock,
   #    or desktop
-
   # when multiple rules match a window, they will all be applied, in the
   # order that they appear in this list
-
-
     # each rule element can be left out or set to 'default' to specify to not 
     # change that attribute of the window
-
     <decor>yes</decor>
     # enable or disable window decorations
-
     <shade>no</shade>
     # make the window shaded when it appears, or not
-
     <position force="no">
       # the position is only used if both an x and y coordinate are provided
       # (and not set to 'default')
@@ -984,7 +1008,6 @@
       # specifies the monitor in a xinerama setup.
       # 1 is the first head, or 'mouse' for wherever the mouse is
     </position>
-
     <size>
       # the size to make the window.
       <width>20</width>
@@ -994,35 +1017,26 @@
       # appears on.
       <height>30%</height>
     </size>
-
     <focus>yes</focus>
     # if the window should try be given focus when it appears. if this is set
     # to yes it doesn't guarantee the window will be given focus. some
     # restrictions may apply, but Openbox will try to
-
     <desktop>1</desktop>
     # 1 is the first desktop, 'all' for all desktops
-
     <layer>normal</layer>
     # 'above', 'normal', or 'below'
-
     <iconic>no</iconic>
     # make the window iconified when it appears, or not
-
     <skip_pager>no</skip_pager>
     # asks to not be shown in pagers
-
     <skip_taskbar>no</skip_taskbar>
     # asks to not be shown in taskbars. window cycling actions will also
     # skip past such windows
-
     <fullscreen>yes</fullscreen>
     # make the window in fullscreen mode when it appears
-
     <maximized>true</maximized>
     # 'Horizontal', 'Vertical' or boolean (yes/no)
   </application>
-
   # end of the example
 -->
   </applications>

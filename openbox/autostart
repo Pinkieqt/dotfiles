@@ -1,42 +1,27 @@
-## Restore Wallpaper
-nitrogen --restore
+xrandr --output eDP1 --off --output DP1 --off --output HDMI1 --off --output HDMI2 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output VIRTUAL1 --off
+xinput set-prop "  GXT 930 Mouse" "libinput Accel Speed" -0.7
 
-## xfce4-settings daemon
-xfsettingsd &
+setxkbmap cz &
+nm-applet &
+udiskie -t &
+volumeicon &
+cbatticon &
+picom &
 
-## polkit agent
-/usr/lib/xfce-polkit/xfce-polkit &
-
-## Start Compositing Manager
-exec compton &
-
-## Launch Polybar
-sh ~/.config/polybar/launch.sh
-
-## Launch Plank
-exec plank &
-
-## Start Music Player Daemon
-exec mpd &
-
-## Notification Daemon
 exec dunst &
 
-## Thunar Daemon
-exec thunar --daemon &
+exec plank &
 
-## Enable Super Keys For Menu
+sh ~/.config/polybar/launch.sh
+
+nitrogen --restore
+
+exec dunst &
+
+xfce4-power-manager &
+
 ksuperkey -e 'Super_L=Alt_L|F1' &
 ksuperkey -e 'Super_R=Alt_L|F1' &
 
-## Enable power management
-xfce4-power-manager &
+sh ~/imwheel
 
-## Run imwheel
-sh ~/Desktop/mywheel.sh
-
-## Adjust backlight (AMD)
-#blight -d amdgpu_bl0 set 20%
-
-## Getting Started
-#gs_run_once.sh
