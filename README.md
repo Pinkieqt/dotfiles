@@ -4,6 +4,7 @@
 ```
 Distro          : Arch Linux
 Window Manager  : openbox
+Compositor      : picom
 Status Bar      : polybar
 Shell           : zsh
 Terminal		: alacritty
