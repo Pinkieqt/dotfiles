@@ -12,7 +12,7 @@ File explorer	: thunar/nautilus
 Dock			: plank
 ```
 
-
+![Dracula Screenshot](https://raw.githubusercontent.com/Pinkieqt/dotfiles/main/screenshots/unixporn%231.png)
 ## Dracula
 ```
 WM Theme		: Vermello
