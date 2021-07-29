@@ -49,7 +49,7 @@ INDIGO = #7985D0
 [bar/bar]
 enable-ipc=true
 height = 30
-width = 99%
+width = 7%
 offset-x = 0.5%
 offset-y = 0.5%
 padding = 5
@@ -76,9 +76,42 @@ font-4="feather:size=10;2"
 module-margin-center = 6
 module-margin-left = 6
 
-modules-left = menu openbox xwindow
-modules-center = 
-modules-right = bitcoin sep alsa sep filesystem sep memory sep date powermenu
+modules-center = menu openbox
+
+[bar/sec]
+enable-ipc=true
+height = 30
+width = 30%
+offset-x = 69.5%
+offset-y = 0.5%
+padding = 5
+;bottom = true
+radius-bottom = 15
+radius-top = 15
+
+background = ${color.bg}
+;background = ${colors.primary}
+foreground = ${color.fg}
+;border-size = 10
+border-top-size = 0
+border-bottom-size = 0
+border-color = #0000
+
+line-size = 2
+
+font-0=SF Pro Display:style=Regular:size=10;2
+font-1=SF Pro Display:style=Semibold:size=10;2
+font-2=FontAwesome5Brands:size=12;3
+font-3="icomoon\-feather:pixelsize=13;4"
+font-4="feather:size=10;2"
+
+module-margin-center = 6
+module-margin-left = 6
+
+modules-center = bitcoin sep alsa sep filesystem sep memory sep date powermenu
+
+
+
 
 
 ;                      _       _           
@@ -149,7 +182,8 @@ format-background = ${color.bg}
 format-font = 1
 label-monitor = %name%
 label-active = %icon%
-label-active-foreground = ${color.accent}
+label-active-foreground = ${color.bg}
+label-active-background = ${color.accent}
 label-occupied = %icon%
 label-occupied-foreground = ${color.fg}
 label-urgent = %icon%
@@ -177,7 +211,7 @@ click-left = ~/.config/rofi/bin/launcher &
 ;--------------------------------------------------------------------- 
 [module/xwindow]
 type = internal/xwindow
-label = %title:0:100:...%
+label = %title:0:75:...%
 label-empty = Empty 
 label-empty-font = 1
 label-font = 1 

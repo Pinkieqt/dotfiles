@@ -2,10 +2,7 @@ xrandr --output eDP1 --off --output DP1 --off --output HDMI1 --off --output HDMI
 xinput set-prop "  GXT 930 Mouse" "libinput Accel Speed" -0.7
 
 setxkbmap cz &
-nm-applet &
-udiskie -t &
-volumeicon &
-cbatticon &
+
 picom &
 
 exec dunst &
@@ -16,12 +13,9 @@ sh ~/.config/polybar/launch.sh
 
 nitrogen --restore
 
-exec dunst &
-
 xfce4-power-manager &
 
-ksuperkey -e 'Super_L=Alt_L|F1' &
-ksuperkey -e 'Super_R=Alt_L|F1' &
+ksuperkey &
 
 sh ~/imwheel
 

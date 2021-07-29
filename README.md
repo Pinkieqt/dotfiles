@@ -1,30 +1,21 @@
 # Dotfiles
 
+## General system info
 ```
-Distro          : Archcraft Linux
+Distro          : Arch Linux
 Window Manager  : openbox
 Status Bar      : polybar
-Shell           : zsh 5.8
+Shell           : zsh
 Terminal		: alacritty
-File explorer	: thunar
+File explorer	: thunar/nautilus
 Dock			: plank
 ```
 
-## Mirage
 
+## Dracula
 ```
-WM Theme		: Dracula-withoutBorder
-Theme			: Dracula [GTK2/3]
-Icons			: WhiteSur-Dark [GTK2/3]
-Font			: Product Sans Regular
-Icon font		: Feather
-```
-
-## Iceberg
-
-```
-WM Theme		: Dracula-withoutBorder
-Theme			: Dracula [GTK2/3]
+WM Theme		: Vermello
+Theme			: Dracula-slim [GTK2/3]
 Icons			: WhiteSur-Dark [GTK2/3]
 Font			: Product Sans Regular
 Icon font		: Feather

@@ -22,23 +22,6 @@
 				<command>geany</command>
 			</action>
 		</item>
-		<menu id="root-menu-8397" label="Apps As Root">
-			<item label="Terminal (alacritty)">
-				<action name="Execute">
-					<execute>apps_as_root.sh alacritty</execute>
-				</action>
-			</item>
-			<item label="File Manager (thunar)">
-				<action name="Execute">
-					<execute>apps_as_root.sh 'dbus-run-session thunar'</execute>
-				</action>
-			</item>
-			<item label="Text Editor (geany)">
-				<action name="Execute">
-					<execute>apps_as_root.sh geany</execute>
-				</action>
-			</item>
-		</menu>
 		<menu id="preferences" label="Preferences">
 			<menu id="obConfig" label="Openbox">
 				<item label="Settings">

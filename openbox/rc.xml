@@ -18,10 +18,9 @@
     <monitor>Mouse</monitor>
     <primaryMonitor>Mouse</primaryMonitor>
   </placement>
-  
   <theme>
-    <name>Numix-Clone</name>
-    <titleLayout>IMC</titleLayout>
+    <name>Vermello</name>
+    <titleLayout/>
     <keepBorder>no</keepBorder>
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
@@ -49,13 +48,13 @@
       <slant>Normal</slant>
     </font>
     <font place="ActiveOnScreenDisplay">
-      <name>Noto Sans</name>
+      <name>SF Pro Display</name>
       <size>9</size>
-      <weight>Bold</weight>
+      <weight>Normal</weight>
       <slant>Normal</slant>
     </font>
     <font place="InactiveOnScreenDisplay">
-      <name>Noto Sans</name>
+      <name>SF Pro Display</name>
       <size>9</size>
       <weight>Normal</weight>
       <slant>Normal</slant>
@@ -69,7 +68,7 @@
       <name>2</name>
       <name>3</name>
     </names>
-    <popupTime>0</popupTime>
+    <popupTime>500</popupTime>
   </desktops>
   <resize>
     <drawContents>yes</drawContents>
@@ -117,8 +116,6 @@
         <to>3</to>
       </action>
     </keybind>
-    
-    
     <!-- Move application to specific desktop -->
     <keybind key="S-W-1">
       <action name="SendToDesktop">
@@ -135,8 +132,6 @@
         <desktop>3</desktop>
       </action>
     </keybind>
-    
-    
     <!-- Switch b/w Applications -->
     <keybind key="A-Tab">
       <action name="NextWindow">
@@ -159,8 +154,6 @@
         </finalactions>
       </action>
     </keybind>
-    
-    
     <!-- Window Tiling: Snap feature -->
     <keybind key="W-Left">
       <action name="UnmaximizeFull"/>
@@ -189,8 +182,6 @@
       </action>
       <action name="MoveToCenter"/>
     </keybind>
-    
-    
     <!-- Top right-->
     <keybind key="W-k">
       <action name="Unmaximize"/>
@@ -231,8 +222,6 @@
         <width>49%</width>
       </action>
     </keybind>
-    
-    
     <!-- MY CODING TILE MANAGER -->
     <keybind key="W-1">
       <action name="Unmaximize"/>
@@ -261,8 +250,7 @@
         <width>32%</width>
       </action>
     </keybind>
-    
-	<!-- 2x2 GRID -->
+    <!-- 2x2 GRID -->
     <keybind key="W-7">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
@@ -299,8 +287,6 @@
         <width>20%</width>
       </action>
     </keybind>
-    
-    
     <!-- Move -->
     <keybind key="W-A-Up">
       <action name="MoveRelative">
@@ -326,8 +312,6 @@
         <y>0</y>
       </action>
     </keybind>
-    
-    
     <!-- Resize -->
     <keybind key="C-A-Right">
       <action name="ResizeRelative">
@@ -349,8 +333,6 @@
         <bottom>-20</bottom>
       </action>
     </keybind>
-    
-    
     <!-- Send Application to next/prev desktop -->
     <keybind key="W-S-Left">
       <action name="SendToDesktopLeft"/>
@@ -358,8 +340,6 @@
     <keybind key="W-S-Right">
       <action name="SendToDesktopRight"/>
     </keybind>
-    
-    
     <!-- Media Controls-->
     <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
@@ -407,8 +387,6 @@
         <command>backlight-down</command>
       </action>
     </keybind>
-    
-    
     <!-- Screenshot Keys -->
     <keybind key="Print">
       <action name="Execute">
@@ -420,8 +398,6 @@
         <command>flameshot full</command>
       </action>
     </keybind>
-    
-    
     <!-- Launch Applications -->
     <keybind key="W-e">
       <action name="Execute">
@@ -454,6 +430,7 @@
     <keybind key="A-F1">
       <action name="Execute">
         <command>~/.config/rofi/bin/launcher</command>
+        <!-- <command>dmenu_run</command> -->
       </action>
     </keybind>
     <!-- <keybind key="W-m">
@@ -511,8 +488,6 @@
         <command>betterlockscreen --lock</command>
       </action>
     </keybind>
-
-
     <!-- Openbox -->
     <!-- <keybind key="C-S-Escape">
       <action name="Exit"/>
@@ -549,8 +524,6 @@
     <keybind key="W-d">
       <action name="ToggleShowDesktop"/>
     </keybind>
-
-
     <!-- Activate Move/Resize -->
     <keybind key="A-r">
       <action name="Resize"/>
@@ -574,8 +547,6 @@
         <menu>client-menu</menu>
       </action>
     </keybind>
-
-
     <!-- Windows Tiling -->
     <!-- <keybind key="W-KP_1">
       <action name="UnmaximizeFull"/>
@@ -652,11 +623,8 @@
         <height>50%</height>
       </action>
     </keybind>-->
-  </keyboard> 
+  </keyboard>
   <!-- Ended Keyboard Shortcuts -->
-
-
-
   <mouse>
     <dragThreshold>4</dragThreshold>
     <doubleClickTime>400</doubleClickTime>
@@ -679,10 +647,6 @@
         <action name="Resize"/>
       </mousebind>
     </context>
-
-
-
-
     <context name="Titlebar">
       <mousebind action="Press" button="A-Left">
         <action name="Focus"/>
@@ -743,9 +707,6 @@
         </action>
       </mousebind>
     </context>
-
-
-
     <context name="Titlebar Top Right Bottom Left TLCorner TRCorner BRCorner BLCorner">
       <mousebind action="Press" button="Left">
         <action name="Focus"/>
@@ -915,8 +876,6 @@
       </mousebind>
     </context>
   </mouse>
-
-
   <menu>
     <file>menu.xml</file>
     <hideDelay>400</hideDelay>
@@ -926,13 +885,10 @@
     <applicationIcons>no</applicationIcons>
     <manageDesktops>yes</manageDesktops>
   </menu>
-
-
   <applications>
     <application class="*">
       <decor>no</decor>
     </application>
-
     <application name="oblogout">
       <position force="no">
         <monitor>1</monitor>
@@ -948,7 +904,6 @@
         <width>50%</width>
       </size>
     </application>
-    
     <application title="MPlayer">
       <decor>no</decor>
     </application>
@@ -958,9 +913,6 @@
         <y>center</y>
       </position>
     </application>
-
-
-    
     <!--	<application class="*">
 	  <focus>yes</focus>
 	</application> -->
