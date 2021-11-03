@@ -1,5 +1,8 @@
 # Dotfiles
 
+Terminal - alacritty + [fish shell](https://github.com/fish-shell/fish-shell) + [pure prompt](https://github.com/pure-fish/pure)
+
+
 ## General system info
 ```
 Distro          : Arch Linux
